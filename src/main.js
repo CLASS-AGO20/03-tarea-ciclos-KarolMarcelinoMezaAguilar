@@ -34,14 +34,47 @@ export default class App {
                 suma = suma + 1/i;
             }
             
-            i++
+            i++;
         }
          
         return suma;
 
     }
     
-    // Función que 
+    // Función que diga si un numero es primo o no (do)
+
+    esPrimo(numero){
+       
+        let i=1
+        let contador=0
+
+        do{
+            if(numero%i==0){
+
+                contador++
+
+            }else{
+                
+                
+            }
+
+            i++
+            
+        }while(i<=numero);
+
+        if(contador>2){
+
+            return false
+
+        }else{
+
+            return true
+        }
+    }
+
+    // 
+
+
 }
 
 let app = new App();
@@ -59,7 +92,9 @@ console.log(app.sumatoriaSerieDos(1));
 
 
 // F
-
+console.log(app.esPrimo(2));
+console.log(app.esPrimo(11));
+console.log(app.esPrimo(8));
 
 // F
 
