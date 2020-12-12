@@ -96,8 +96,40 @@ export default class App {
         return multres
     }
 
-    //
+    // Función que regrese los numero impares separados que hay entre dos números
 
+    obtenerImpares(numero1, numero2){
+
+        
+        if(numero1>numero2){
+
+            let newNumero1 = numero1;
+            numero1 = numero2;
+            numero2 = newNumero1;
+
+        }else{
+        
+        }
+
+        let i = numero1
+
+        let impares = ""
+        do{
+
+            if(i%2!==0){
+
+                impares = String(i) +  "," + impares 
+            }else{
+
+            }
+
+            i++;
+
+        }while(i<=numero2);
+
+        
+        return impares.substr(0,impares.length-1);
+    }
 }
 
 let app = new App();
@@ -125,4 +157,8 @@ console.log(app.obtenerMultiplos(1,7));
 console.log(app.obtenerMultiplos(3,9));
 console.log(app.obtenerMultiplos(8,10));
 
-// F
+// F5
+
+console.log(app.obtenerImpares(2,5));
+console.log(app.obtenerImpares(5,10));
+console.log(app.obtenerImpares(1,15));
