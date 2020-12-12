@@ -18,6 +18,30 @@ export default class App {
 
     // Función que reciba un numero y calcule la suma de una serie (while)
 
+    sumatoriaSerieDos(numero){
+
+        let i=2;
+        let suma=1;
+    
+        while(i<=numero){
+
+            if(i%2!==0){
+
+                suma = suma -1/i;
+
+            }else{
+
+                suma = suma + 1/i;
+            }
+            
+            i++
+        }
+         
+        return suma;
+
+    }
+    
+    // Función que 
 }
 
 let app = new App();
@@ -28,7 +52,10 @@ console.log(app.sumatoriaSerieUno(5));
 console.log(app.sumatoriaSerieUno(3));
 console.log(app.sumatoriaSerieUno(1));
 
-// F
+// F2
+console.log(app.sumatoriaSerieDos(5));
+console.log(app.sumatoriaSerieDos(3));
+console.log(app.sumatoriaSerieDos(1));
 
 
 // F
