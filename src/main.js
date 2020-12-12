@@ -72,8 +72,31 @@ export default class App {
         }
     }
 
-    // 
+    // Función que regrese como string los multiplos de 3 de un rango (do)
 
+    obtenerMultiplos(inicio, fin){
+
+        let multres=""
+        let i=inicio
+        do{
+
+            if(i%3==0){
+
+                multres = multres + String(i)
+
+            }else{
+
+
+            }
+
+            i++
+
+        }while(i<=fin);
+
+        return multres
+    }
+
+    //
 
 }
 
@@ -91,12 +114,15 @@ console.log(app.sumatoriaSerieDos(3));
 console.log(app.sumatoriaSerieDos(1));
 
 
-// F
+// F3
 console.log(app.esPrimo(2));
 console.log(app.esPrimo(11));
 console.log(app.esPrimo(8));
 
-// F
+// F4
 
+console.log(app.obtenerMultiplos(1,7));
+console.log(app.obtenerMultiplos(3,9));
+console.log(app.obtenerMultiplos(8,10));
 
 // F
